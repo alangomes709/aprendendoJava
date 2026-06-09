@@ -18,9 +18,9 @@ public class Geometrico {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         System.out.println("Digite base");
-        Retangulo.base=Integer.parseInt(ler.nextLine());
+        Retangulo.base=Double.parseDouble(ler.nextLine());
         System.out.println("Digite altura");
-        Retangulo.altura = Integer.parseInt(ler.nextLine());
+        Retangulo.altura = Double.parseDouble(ler.nextLine());
         System.out.printf("Area da base: %.2f\n", Retangulo.calcularArea(Retangulo.base, Retangulo.altura));
         System.out.printf("Perimetro: %.2f\n", Retangulo.calcularPerimetro(Retangulo.base, Retangulo.altura));
         
