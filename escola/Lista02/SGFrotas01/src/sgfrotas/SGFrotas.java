@@ -12,18 +12,21 @@ import java.util.Scanner;
  */
 public class SGFrotas {
     public static void main(String[] args) {
-        Scanner ler = new Scanner(System.in);
-        for (int i = 0; i < 2; i++) {
-            System.out.println("Digite o modelo do veículo");
-            Carros.modelo = ler.nextLine();
-            System.out.println("Digite a marca: ");
-            Carros.marca = ler.nextLine();
-            System.out.println("Digite o ano: ");
-            Carros.ano = Integer.parseInt(ler.nextLine());
-            Carros.exibirDados(Carros.modelo, Carros.marca, Carros.ano);
-            //resolver problema do enter
-        } 
-       
+        Carros c1 = new Carros();
+        Carros c2 = new Carros();
+        
+        //carro 1
+        c1.modelo = "Civic";
+        c1.marca = "Honda";
+        c1.ano = 2019;
+        
+        c2.modelo = "Uno marca texto";
+        c2.marca = "Fiat";
+        c2.ano = 2017;
+        
+        c1.exibirDados(c1.modelo, c1.marca, c1.ano);
+        System.out.println("///////////////////////////");
+        c2.exibirDados(c2.modelo, c2.marca, c2.ano);
         
     }
     

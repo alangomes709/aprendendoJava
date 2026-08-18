@@ -4,6 +4,7 @@
  */
 package estruturasDeRepeticao;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -18,16 +19,35 @@ public class Q35 {
 //            System.out.print(i+" ");
 //        }
 
+//        Scanner ler = new Scanner(System.in);
+//        int v[]={3,5,2,15,7,10,9,1,2,8};
+//        int aux=0;
+//        
+//        for (int i = 0; i < v.length; i++) {
+//            if(v[i]%5==0){
+//                aux+=v[i];
+//            }
+//        }
+//        System.out.println("Media"+(aux/10));
+//        
+
+
+
+//PARA CADA OU FOR EACH ONE
         Scanner ler = new Scanner(System.in);
         int v[]={3,5,2,15,7,10,9,1,2,8};
-        int aux=0;
-        
-        for (int i = 0; i < 10; i++) {
-            if(v[i]%5==0){
-                aux+=v[i];
-            }
+         for(int valor: v){
+            System.out.print(valor + " ");
+        }        
+        System.out.println("O numero 15 está na posição: " + Arrays.binarySearch(v, 15));
+        Arrays.sort(v);
+        for(int valor: v){
+            System.out.print(valor + " ");
         }
-        System.out.println("Media"+(aux/10));
         
+        System.out.println("Busca");
+        System.out.println("O numero 15 está na posição: " + Arrays.binarySearch(v, 15));
+
+
     }
 }

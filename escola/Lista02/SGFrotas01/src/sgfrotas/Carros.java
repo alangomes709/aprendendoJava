@@ -9,11 +9,11 @@ package sgfrotas;
  * @author todyn
  */
 public class Carros {
-    public static String modelo;
-    public static String marca;
-    public static int ano;
+    public String modelo;
+    public String marca;
+    public int ano;
 
-    public static void exibirDados(String modelo, String marca, int ano){
+    public void exibirDados(String modelo, String marca, int ano){
         System.out.println("Modelo: "+modelo);
         System.out.println("Marca: "+marca);
         System.out.println("Ano: "+ano);
