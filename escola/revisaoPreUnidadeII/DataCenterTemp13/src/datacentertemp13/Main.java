@@ -2,25 +2,22 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
  */
-package biblioteca09;
+package datacentertemp13;
 
 /**
  *
- * @author todyn
+ * @author alan
  */
-public class Biblioteca09 {
+public class Main {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Livro l = new Livro("O Hobbit", "JRR Tolkien", 397);
-        l.registrarLeitura(45);
-        l.status();
-        l.registrarLeitura(189);
-        l.status();
-        l.registrarLeitura(45);
-        l.status();
+        // TODO code application logic here
+        Termostato t = new Termostato(25, 36);
+        t.alterarTemperatura(32);
+        t.alterarTemperatura(43);
     }
     
 }

@@ -25,22 +25,21 @@ public class Livro {
         int aux=paginasLidas+qnt;
         if (totalPaginas<aux) {
             System.out.println("Num paginas lidas não pode ser maior q o total de paginas");
-        } else{
-            
-        paginasLidas+=qnt;
+        } else{            
+            paginasLidas+=qnt;
         }
         
     }
     
     public double calcularPercentualLeitura(int paginasLidas){
-        return (100*paginasLidas)/totalPaginas;
+        return (100*paginasLidas)/totalPaginas; 
                         
                         
     }
     public void status(){
         System.out.println("Paginas Lidas: "+paginasLidas);
         System.out.println("Total Paginas: "+totalPaginas);
-        System.out.println("Percentual: " +calcularPercentualLeitura(paginasLidas));
+        System.out.println("Percentual: " +calcularPercentualLeitura(paginasLidas)+"%");
     }
     
     
