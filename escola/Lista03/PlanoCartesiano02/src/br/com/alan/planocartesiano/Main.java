@@ -30,7 +30,7 @@ public class Main {
         r2.mostra();
         
         //FALTA TESTAR O CIRCULO
-        
+        //deve ta certo
         
         
         p1.setX(2);

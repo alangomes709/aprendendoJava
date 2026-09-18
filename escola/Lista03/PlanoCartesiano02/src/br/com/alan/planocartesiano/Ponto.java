@@ -23,7 +23,7 @@ public class Ponto {
     
     public void move(double dx, double dy){
         if (dx==0 && dy ==0) {
-            throw new IllegalArgumentException("Para mover o ponto, é necessário que pelo menos uma coordenada seja diferente de zero.");
+            throw new IllegalArgumentException("Para mover o ponto, é necessário que pelo menos uma coordenada seja diferente de zero."); //não sei se é realmente aplicável
         }
         setX(getX()+dx);
         setY(getY()+dy);
