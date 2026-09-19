@@ -8,14 +8,14 @@ package aula05tentativadireto;
  *
  * @author alan
  */
-public class ContaCorrente {
+public class ContaBanco {
     private double saldo;
     private String nomeCliente;
     public int numConta;
     protected String tipo;
     private boolean status; 
 
-    public ContaCorrente() {
+    public ContaBanco() {
         this.saldo = 0;
         this.status = false;
     }
@@ -26,8 +26,10 @@ public class ContaCorrente {
         setTipo(tipo);
         if (tipo.equals("CC")) {
             setSaldo(50);
+            System.out.println("Conta aberta com sucesso");
         } else if (tipo.equals("CP")) {
             setSaldo(150);
+            System.out.println("Conta aberta com sucesso");
         } else{
             System.out.println("Solicite um tipo de conta válido: CC ou CP");
         }
