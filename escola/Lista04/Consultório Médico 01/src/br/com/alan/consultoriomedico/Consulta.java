@@ -36,7 +36,7 @@ public class Consulta {
     }
 
     public void setHistoricoSintomas(String historicoSintomas) {
-        if (historicoSintomas==null) {
+        if (historicoSintomas==null || historicoSintomas.trim().isEmpty()) {
             throw new IllegalArgumentException("O histórico não pode estar vazio.");            
         }
         this.historicoSintomas = historicoSintomas;

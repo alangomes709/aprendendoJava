@@ -4,6 +4,7 @@
  */
 package aula07;
 import br.com.alan.uec.Lutador;
+import br.com.alan.uec.Luta;
 /**
  *
  * @author alan
@@ -17,7 +18,17 @@ public class Main {
         l[3] = new Lutador("Leny", 34, 70.0, 1.79, 8, 0, 2, "Canadá");
         l[4] = new Lutador("Manito", 33, 65.0, 1.70, 5, 3, 1, "México");
         l[5] = new Lutador("AKSJdn", 22, 65.0, 1.71, 3, 1, 3, "Alemanha");
-        l[2].status();
+        
+        Luta u1 = new Luta();
+        try {
+            u1.marcarLuta(l[0], l[1]);
+            u1.lutar();
+            
+        } catch (IllegalArgumentException e){
+            System.out.println("Erro: " + e.getMessage());
+        }
+        
+        
         
     }
 }

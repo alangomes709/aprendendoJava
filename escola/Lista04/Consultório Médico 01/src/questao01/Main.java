@@ -14,10 +14,12 @@ import br.com.alan.consultoriomedico.Consulta;
 public class Main {
     public static void main(String[] args) {
         Paciente p1 = new Paciente("João Aldo", 43, "11122233344");
-        Paciente p2 = new Paciente("José", 65,"55566677788");
+//        Paciente p2 = new Paciente("José", 65,"55566677788");
+        Paciente p2 = null;
         try{
             Consulta c1 = new Consulta("23/04/27", p1);
             Consulta c2 = new Consulta("12/12/23", p2);
+            c1.setHistoricoSintomas("aaaaa");
             c1.exibirResumoConsulta();
             c2.exibirResumoConsulta();
         } catch(IllegalArgumentException e){

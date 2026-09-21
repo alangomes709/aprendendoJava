@@ -9,6 +9,6 @@ package br.com.alan.uec;
  * @author alan
  */
 public interface LutaInter {
-    public abstract void marcarLuta();
+    public abstract void marcarLuta(Lutador l1, Lutador l2);
     public abstract void lutar();
 }
