@@ -26,7 +26,7 @@ public class Main {
         try{
             i3.setDescricao("Controle remoto");
             i3.setPrecoUnitario(76);
-            i3.setQuantidade(-4);
+            i3.setQuantidade(4);
             c1.adicionarItem(i1);
             c1.adicionarItem(i2);
             c1.adicionarItem(i3);            

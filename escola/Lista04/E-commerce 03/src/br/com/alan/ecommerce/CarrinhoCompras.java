@@ -42,10 +42,11 @@ public class CarrinhoCompras {
             throw new IllegalArgumentException("Itens está vazio");
         }
         for(ItemVenda a: itens){
+            System.out.println("/////////////////////////");
             System.out.println("Descricao: " + a.getDescricao());
             System.out.println("Quantidade "+ a.getQuantidade());
             System.out.println("Pre Unitario: "+a.getPrecoUnitario());
-            System.out.println("subtotal"+a.calcularSubtotal(a.getPrecoUnitario(), a.getQuantidade()));
+            System.out.println("subtotal "+a.calcularSubtotal(a.getPrecoUnitario(), a.getQuantidade()));
         }
         System.out.println("TOTAL: "+ calcularTotal());
     }
